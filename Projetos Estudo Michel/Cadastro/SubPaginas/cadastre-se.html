@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8" >
+        <link rel="stylesheet" href="/Cadastro/SubPaginas/css_cadastro/cadastrostyle.css">
+        <title> Cadastre-se aqui</title>
+</head>
+<form method="POST">
+<fieldset id="empresa"><legend> Dados da empresa</legend> 
+    <p> <label for="ieNome">Nome empresarial:</label>  <input type="text" name="teNome" id="ieNome" size="20" maxlength="30" placeholder="Nome da empresa" ></p>
+    <p><label for="iTitulo">Titulo do estabelecimento</label> : <input type="text" name="tTitulo" id="iTitulo" size="25" maxlength="35" placeholder="Nome fantasia"></p>
+    <p><label for="iAtve">Codigo e descrição da atividade economica principal:</label> <input type="text" name="tAtve" id="iAtve" size="35" maxlength="40" placeholder="Principal fonte de renda"></p>
+    <p> <label for="inJuri">Codigo e descrição da natureza juridica</label><input type="text" name="tnJuri" id="inJuri" size="35" maxlength="40" placeholder="Descrição"></p>  
+</fieldset>
+<fieldset id="endereco"><legend>Endereço</legend>
+    <p><label for="iLogra">Logradouro:</label> <input type="text" name="tLogra" id="iLogra" placeholder="Rua"></p>
+    <p><label for="iNumero">Numero:</label> <input type="number" name="tNumero" id="iNumero" min="0" max="1999" placeholder="Nº" ></p>
+    <p><label for="iCep">cep:</label> <input type="number" name="tCep" id="iCep" placeholder="Cep da sua cidade"></p>
+    <p><label for="iBairro">Bairro/Distrito:</label> <input type="text" name="tBairro" id="iBairro" placeholder="Seu bairro/Distrito"></p>
+    <p><label for="iCidade">Municipio:</label> <input type="text" name="tCidade" id="iCidade" placeholder="Sua Cidade" size="40" maxlength="45" list="cidades" ></p>
+        <datalist id="cidades">
+            <option value="Sobradinho"></option>
+            <option value="Juazeiro"></option>
+            <option value="Rondonia"></option>
+            <option value="São luis"></option>
+
+        </datalist>   
+    <p><label for="UF">UF:</label>
+    <select id="UF">
+        <option value="BA">Bahia</option>
+        <option value="SC">Santa catarina</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas gerais</option>
+        <option value="AC">Acre</option>
+        <option value="MR">Maranhão</option>
+        <option value="SP"> São Paulo</option>
+    </select>
+    </p>
+    
+    
+    
+    
+        <p>Complemento: <input type="text" name="tComplemento" id="iComplemento" size="60" placeholder="Informações Adicionais"></p>
+</fieldset>
+<fieldset><legend>Dados do cadastro</legend>
+    <p>Situação cadastral: <input type="text" name="tsCadastro" id="isCadastro"></p>
+    <p>Motivo de situação cadastral: <input type="text" name="tmsCadastro" id="imsCadastro"></p>
+    <p><label for="iDate">Data da situação cadastral:</label> <input type="date" name="tDate" id="iDate"></p>
+</fieldset>
+    
+
+
+
+
+
+</form>
