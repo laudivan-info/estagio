@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel= "stylesheet" href="Estilo_css/Estiloformulário.css">
+        <title>Formulário de cadastro</title>
+ </head>
+  <body> 
+       <header>
+          <div class="contact-image">
+              <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+          </div>
+          <div class = "container">
+              <ul class="nav justify-content-center">
+          <h1>Informe seus dados abaixo para cadastrar-se</h1>  
+        </ul>
+          </div>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </header> 
+
+
+       <nav class= "navbar  navbar-expand-lg  navbar-ligth  bg-ligth">
+              
+      <div class="container">
+      <form method="post" id="fContato" action="mailto: naataliiasntoos@gmail.com">
+      <fieldset id="usuario" > <legend> Identificação do usuario </legend>
+
+                                        <!-------   NOMEEE    -------->
+            <div class="form-group">
+              <label for="DNome">Nome</label>
+              <input type="text" class="form-control" id="DNome" aria-describedby="DNomeHelp" placeholder="Nome completo">
+              <small id="DNomeHelp" class="form-text text-muted">Digite seu nome.</small>
+            </div>
+                                        <!-------   CPFF    -------->
+
+            <div class="form-group">
+              <label for="tCPF">CPF</label>
+              <input type="text" class="form-control" id="tCPF" aria-describedby="tCPFHelp" placeholder="C.P.F">
+              <small id="tCPFHelp" class="form-text text-muted">Digite seu CPF.</small>
+            </div>
+                                         <!-------   EMAIL    -------->
+            <div class="form-group">
+              <label for="tMail">Email</label>
+              <input type="email" class="form-control" id="tMail" aria-describedby="tMailHelp" placeholder="usuario@servidor.com">
+              <small id="tMailHelp" class="form-text text-muted">Digite seu e-Mail.</small>
+            </div>
+
+                                       <!-------   SENHAAA    -------->
+            <div class="form-group">
+            <label for="cSenha"> Senha:</label> 
+            <input type="password" class="form-control" id="cSenha" aria-describedby="cSenhaHelp" placeholder=" 8 Dígitos" size="8" maxlength="8" /> 
+            <small id="cSenhaHelp" class="form-text text-muted">Digite sua senha.</small>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="tcheck">
+                <label class="form-check-label" for="tcheck">Mostrar senha</label>
+              </div>
+           </div>
+                                        <!-------   SEXO    -------->                            
+             <div class="form-group">
+                  <label for="sexo"> Sexo </label> <p>
+                  <input type="radio" name="tSexo" id="cFem" /> 
+                  <label for="cFem"> Feminino </label> <br/> 
+                  <input type="radio" name="tSexo" id="cMasc" /> 
+                  <label for="cMasc"> Masculino </label> <br/>  
+              </div> 
+
+                                       <!-------   DATA NASCIMENTO    --------> 
+                 <div class="form-group">
+                  <label for="nNasci"> Data de Nascimento: </label> <p>
+                  <input type="date" aria-describedby="cSenhaHelp" id="cNasci" /> 
+                  <small id="nNasci" class="form-text text-muted">dgite sua data de nascimento.</small>
+                  </div>
+                                       <!-------   LOGADOURO    -------->
+            <div class="form-group">                           
+           <label for= "endereco">  Endereço do usuário: </label> <p>
+            <label for="tLog"> Logadouro: </label>
+                <input type="text" class="form-control" id="tLog" aria-describedby="tLogHelp" placeholder="Rua, Avenida, Travessa.." size="50" maxlength="50" /> 
+                <small id="tLog" class="form-text text-muted">Informe seu endereço</small>
+
+            <label for= "tNum"> Número: </label >
+                 <input type="number" class="form-control" id="tNum" aria-describedby="tLogHelp" min="1" max="9999" /> 
+
+            
+           <div class="form-group">     
+            <label for="tEst"> Estado: </label > <select  id="cEst" > 
+                  <option> Bahia </option> 
+                  <option> Pernambuco</option>  </select>  
+                  <small id="tEst" class="form-text text-muted">Informe seu estado.</small>
+            </div>      
+
+            <div class="form-group">
+            <label for="tCid"> Cidade: </label> <Select id="cCid">
+                  <optgroup label="Cidades da Bahia"> 
+                  <option> Sobradinho </option> 
+                  <option> Juazeiro</option> 
+                  <option> Casa Nova </option> 
+                  <option> Sento se</option> </optgroup>                  
+
+                  <optgroup label="Cidades de pernambuco"> 
+                  <option> Petrolina </option>
+                  <option> Afranio</option> 
+                  <option> Recife</option>  
+                  </optgroup> 
+                </select> 
+                <small id="tCid" class="form-text text-muted">Informe sua cidade.</small> 
+                </div>
+                <button type="submit" class="btn btn-secondary btn-lg btn-block">Enviar formulário</button>
+              </div>
+  </form> 
+  </div>
+      </nav>   
+      </body>
+</html>
