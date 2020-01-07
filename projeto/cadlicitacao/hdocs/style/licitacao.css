@@ -1,10 +1,19 @@
+html, body, section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: #fff;
+}
+
 section {
-    display: block;
-    height: 500px;
-    width: 500px;
-    background: #000;
+    display: flexbox;
+    padding: 0.5rem;
+    
 }
 
 .hide {
+    display: none;
     visibility: hidden;
+    height: 0;
 }
