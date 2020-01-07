@@ -1,3 +1,12 @@
+<!-- 
+  Webapp paara cadastro dos editais de licitação.
+  Prefeitura de Sobradinho, Bahia
+
+  Laudivan Freire de Almeida <laudivan IN gmail DOT com>
+  Natalia <>
+  Michel <>
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -10,7 +19,8 @@
     <body>
         <!-- Tela de login -->
         <section id="loginScreen">
-          <img src="images/logo.pms.svg" class="appLogo">           
+          <img src="images/logo.pms.svg" class="appLogo">
+          <div class="content">           
           <fieldset id="usuario" > 
             <div class="form-group">
               <label for="DEmail">Usuário</label>
@@ -23,15 +33,18 @@
             </div>
           </fieldset>
           <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
+        </div>
         </section>
         
             
         <!-- Tela de início da aplicação -->
         <section id="menuScreen">
             <img src="images/logo.pms.svg" class="appLogo">
-            <br><a href="#" class="btn">Cadastrar editais</a> </br>
-            <br><a href="#" class="btn">listar editais</a> </br>
-            <br><a href="#" class="btn">listar empresas</a></br>
+            <div class="content"> 
+              <a href="#" class="btn btn_menu">Cadastrar editais</a>
+              <a href="#" class="btn btn_menu">Listar editais</a>
+              <a href="#" class="btn btn_menu">Listar empresas<a>
+            </div>
  
         </section>
 
@@ -47,7 +60,7 @@
             
         </section>
 
-        <section id="aboutScree">
+        <section id="aboutScreen">
             
         </section>
 
