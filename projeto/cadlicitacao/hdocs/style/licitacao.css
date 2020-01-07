@@ -17,3 +17,17 @@ section {
     visibility: hidden;
     height: 0;
 }
+
+.appLogo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* overwritting bootstrap */
+
+.btn {
+    
+}
