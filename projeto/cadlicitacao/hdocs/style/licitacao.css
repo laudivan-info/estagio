@@ -1,0 +1,10 @@
+section {
+    display: block;
+    height: 500px;
+    width: 500px;
+    background: #000;
+}
+
+.hide {
+    visibility: hidden;
+}
