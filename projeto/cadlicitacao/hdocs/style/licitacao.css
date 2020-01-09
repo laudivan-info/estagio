@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+* { font-family: 'Lato', sans-serif; }
+
 html, body {
     width: 100%;
     height: 100%;
@@ -6,8 +10,13 @@ html, body {
     background: #fff;
 }
 
+p, li, a { font-weight: 100; font-size: 1.2rem; color: #6c757d; text-align: justify;}
+
+h3 { font-weight: 400; font-size: 1.8rem; color: #4a5157;}
+
 section {
     width: 100%;
+    min-height: 90%;
     display: flexbox;
     padding: 0.5rem;
     
@@ -18,17 +27,17 @@ section {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     padding: .5rem;
-    bottom: 0.5rem;
-    text-align: center;
-    font-size: .7em;
-    color: #8e8e8f;
+    text-align: center !important;
 }
 
 footer a {
-    color: #5e5e5f
+    font-size: 0.8rem !important;
+    font-weight: 300;
+    color: #3e3e3f;
 }
+
 
 .hidden {
     display: none;
@@ -44,6 +53,14 @@ footer a {
     margin-right: auto;
 }
 
+.loginBase {
+    margin-top: 3rem;
+}
+
+.loginBase .btn-about {
+    float: right;
+}
+
 /* overwritting bootstrap */
 #loginScreen .content, #menuScreen .content {
     max-width: 15rem; 
@@ -53,26 +70,40 @@ footer a {
     margin-right: auto;
 }
 
+.navbar-text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #4a5157;
+    right: 1rem;
+}
+
+.navbar.fixed-top + .content {
+    margin-top: 3.5rem;
+}
+
 .btn_menu {
     display: box;
     margin-bottom: 0.8rem;
     width: 15rem;
-/*
-    box-shadow:inset -7px -2px 0px -20px #ffffff;
-    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    */
 	background-color:#ffffff;
 	border-radius:10px;
-	border:2px solid #dcdcdc;
-	display:inline-block;
-	color:#666666;
+	border:3px solid #6c757d;
+	display:block;
+	color:#6c757d !important;
 	padding:16px 68px;
-	text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
+}
+
+.btn_menu:visited {
+    color: #6c757d;
+}
+
+.btn_menu:active {
+    background: #4a5157;
+    color: #fff;
 }
 
 .btn_menu:hover {
-    background: #666;
+    background: #6c757d;
     color: #fff;
     font-weight: 600;
 }

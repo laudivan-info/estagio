@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933334"
+   version="1.1"
+   id="svg1304"
+   inkscape:version="0.92.4 (unknown)"
+   sodipodi:docname="btn_sair.svg">
+  <defs
+     id="defs1298" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-23.944121"
+     inkscape:cy="-29.22794"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1440"
+     inkscape:window-height="864"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1301">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-99.083796,-91.760578)">
+    <path
+       style="fill:#6c757d;fill-opacity:1;stroke-width:0.08848796"
+       d="M 14.992188 9.421875 C 11.880238 9.421875 9.3476562 11.954464 9.3476562 15.066406 L 9.3476562 48.933594 C 9.3476562 52.045543 11.880238 54.578125 14.992188 54.578125 L 31.923828 54.578125 C 32.964294 54.578125 33.806641 53.735779 33.806641 52.695312 C 33.806641 51.654884 32.964294 50.814453 31.923828 50.814453 L 14.992188 50.814453 C 13.953611 50.814453 13.109375 49.972095 13.109375 48.933594 L 13.109375 15.066406 C 13.109375 14.027822 13.953687 13.185547 14.992188 13.185547 L 31.923828 13.185547 C 32.964294 13.185547 33.806641 12.345127 33.806641 11.304688 C 33.806641 10.264244 32.964294 9.421875 31.923828 9.421875 L 14.992188 9.421875 z M 41.320312 18.830078 C 40.838664 18.833624 40.357195 19.020896 39.992188 19.390625 C 39.262134 20.130029 39.270289 21.320754 40.011719 22.050781 L 48.185547 30.119141 L 26.28125 30.119141 C 25.240822 30.119141 24.398438 30.959583 24.398438 32 C 24.398438 33.040466 25.240822 33.880859 26.28125 33.880859 L 48.185547 33.880859 L 40.011719 41.949219 C 39.270478 42.679272 39.264175 43.869948 39.992188 44.609375 C 40.361069 44.982036 40.846589 45.169922 41.332031 45.169922 C 41.809953 45.169922 42.287355 44.990153 42.652344 44.628906 L 54.091797 33.339844 C 54.44934 32.98608 54.652344 32.504189 54.652344 32 C 54.652344 31.495962 54.451003 31.015787 54.091797 30.660156 L 42.652344 19.371094 C 42.283575 19.00608 41.801961 18.826532 41.320312 18.830078 z "
+       transform="matrix(0.26458333,0,0,0.26458333,99.083796,91.760578)"
+       id="path2388" />
+  </g>
+</svg>

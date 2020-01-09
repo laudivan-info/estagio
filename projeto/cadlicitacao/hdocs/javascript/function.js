@@ -11,6 +11,8 @@ function clickToPage(event) {
 
     if (!toPageId) return
 
+    console.log('Change to ' + toPageId)
+
     changePageById(toPageId)
 }
 

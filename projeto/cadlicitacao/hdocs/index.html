@@ -36,7 +36,7 @@
           <input type="password" class="form-control" id="senha" placeholder="********">
         </div>
       </fieldset>
-      <a href="#" clickToPage="menuScreen" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button"
+      <a href="#" clickToPage="menuScreen" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
         aria-disabled="true">Entrar</a>
     </div>
   </section>
@@ -46,36 +46,60 @@
   <section id="menuScreen">
     <img src="./images/logo.pms.svg" class="appLogo">
     <div class="content">
-      <a href="#" class="btn btn_menu">Cadastrar editais</a>
-      <a href="#" class="btn btn_menu">Listar editais</a>
-      <a href="#" class="btn btn_menu">Listar empresas<a>
+      <div>
+        <a clickToPage="cadEditalScreen" class="btn btn_menu">Cadastrar editais</a>
+        <a clickToPage="editalLstScreen" class="btn btn_menu">Listar editais</a>
+        <a clickToPage="empLstScreen" class="btn btn_menu">Listar empresas</a>
+      </div>
+      <div class="loginBase">
+        <img clickToPage="loginScreen" src="./images/btn_sair.svg">
+        <img clickToPage="aboutScreen" class="btn-about" src="./images/btn_about.svg">
+      </div>
     </div>
 
   </section>
 
   <section id="cadEditalScreen">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img clickToPage="menuScreen" src="./images/btn_voltar.svg">
+      <span class="navbar-text">Cadastrar edital</span>
+    </nav>
+    <div class="content">
 
+    </div>
   </section>
 
   <section id="editalLstScreen">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img clickToPage="menuScreen" src="./images/btn_voltar.svg">
+      <span class="navbar-text">Listar editais</span>
+    </nav>
+    <div class="content">
 
+    </div>
   </section>
 
   <section id="empLstScreen">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img clickToPage="menuScreen" src="./images/btn_voltar.svg">
+      <span class="navbar-text">Listar empresas</span>
+    </nav>
+    <div class="content">
 
+    </div>
   </section>
 
   <section id="aboutScreen">
-    <img src="./images/logo.pms.svg" class="appLogo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img clickToPage="menuScreen" src="./images/btn_voltar.svg">
+      <span class="navbar-text">Sobre o app</span>
+    </nav>
     <div class="content">
-      <h3>Sobre o aplicativo</h3>
-      <p></p>
-      <h3>Equipe de desenvolvimento</h3>
-      <p>Este aplicativo foi desenvolvido pelo programador estatutário da prefeitura
+      <p>Desenvolvido pelo programador estatutário da prefeitura
         em conjunto com os estágiários listados abaixo:</p>
       <ul>
         <li>Laudivan Freire de Almeida (programador estatutário)</li>
-        <li>Natália (estagiária/IF Sertão)</li>
+        <li>Natália Costa dos Santos (estagiária/IF Sertão)</li>
         <!--TODO: completar o nome-->
         <li>Michel Aprígio (estagiário/CETEP Juazeiro)</li>
         <!--TODO: completar o nome-->
@@ -104,11 +128,9 @@
   </div>
 
   <footer>
-    Aplicativo de compartilhamento de editais da
-    <a target="_blank" href="http://www.sobradinho.ba.gov.br">
-      Prefeitura Municipal de Sobradinho, Bahia
-    </a>.<br>
-    Desenvolvido pela <a clickToPage='aboutScreen' href="#">Equipe de Desenvolvimento</a>.
+    &copy;<a target="_blank" href="http://www.sobradinho.ba.gov.br">
+      Prefeitura Municipal de Sobradinho, Bahia (2020)
+    </a>
   </footer>
 
 </body>
