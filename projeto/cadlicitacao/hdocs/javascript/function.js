@@ -28,6 +28,13 @@ function changePageById(toPageId) {
     $(toPage).removeClass('hidden').fadeIn('slow')
 }
 
-
-
 /* Funções de acesso ao FireBase */
+
+
+/**
+ * 
+ * @param {String} idEdital 
+ */
+function removeEdital(idEdital) {
+
+}
