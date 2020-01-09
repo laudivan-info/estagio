@@ -62,12 +62,19 @@ footer a {
 }
 
 /* overwritting bootstrap */
-#loginScreen .content, #menuScreen .content {
+#loginScreen .content, #menuScreen .content,
+#cadScreen .content, #downloadScreen .content
+{
     max-width: 15rem; 
     margin-top: 2rem;
     /* Centralizando */
     margin-left: auto;
     margin-right: auto;
+}
+
+#downloadScreen .btn {
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .navbar-text {
@@ -81,8 +88,18 @@ footer a {
     margin-top: 3.8rem;
 }
 
+label {
+    color:#6c757d;
+}
+
+.form-control {
+	background-color:#ffffff;
+	border-radius:10px;
+	border:3px solid #6c757d;
+	color:#6c757d;
+}
+
 .btn_menu {
-    display: box;
     margin-bottom: 0.8rem;
     width: 15rem;
 	background-color:#ffffff;
