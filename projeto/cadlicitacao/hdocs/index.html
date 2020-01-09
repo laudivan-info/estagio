@@ -6,20 +6,20 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/licitacao.css">
+  <link rel="stylesheet" href="./style/licitacao.css">
   <title></title>
 </head>
 
 <body>
   <!-- Tela de login -->
   <section id="loginScreen">
-    <img src="images/logo.pms.svg" class="appLogo">
+    <img src="./images/logo.pms.svg" class="appLogo">
 
   </section>
 
   <!-- Tela de início da aplicação -->
   <section id="menuScreen">
-    <img src="images/logo.pms.svg" class="appLogo">
+    <img src="./images/logo.pms.svg" class="appLogo">
 
   </section>
 
@@ -36,7 +36,11 @@
   </section>
 
   <section id="aboutScreen">
-
+    <img src="./images/logo.pms.svg" class="appLogo">
+    <div class="content">
+      <a clickToPage="menuScreen">Voltar</a>
+      <h3>Equipe de desenvolvimento</h3>
+    </div>
   </section>
 
   <div id="confirmRemoveModal" class="modal" tabindex="-1" role="dialog">
@@ -44,7 +48,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Remoção de edital</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button clickToPage="Teste 2" type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -61,13 +65,15 @@
 
   <footer>
     Aplicativo de compartilhamento de editais da
-    <a target="_blank" href="http://www.sobradinho.ba.gov.br">Prefeitura Municipal de Sobradinho, Bahia</a>.<br>
-    Desenvolvido pela <a class="linkToAbout">Equipe de Desenvolvimento</a>.
+    <a target="_blank" href="http://www.sobradinho.ba.gov.br">
+      Prefeitura Municipal de Sobradinho, Bahia
+    </a>.<br>
+    Desenvolvido pela <a clickToPage='aboutScreen' href="#">Equipe de Desenvolvimento</a>.
   </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -79,11 +85,15 @@
     <script src="/__/firebase/7.5.0/firebase-firestore.js"></script>             
     <script src="/__/firebase/init.js"></script> -->
 
+<script src="./javascript/function.js"></script>
+
 <script>
   $(function () {
-    $('section:not(#loginScreen)').addClass('hide')
+    $('section:not(#loginScreen)').addClass('hidden').hide()
 
-    console.log(JSON.stringify($('.linkToAbout')))
+    console.log(JSON.stringify(document.querySelectorAll('[clickToPage]')))
+
+    $(document.querySelectorAll('[clickToPage]')).click(clickToPage)
 
   })
 </script>

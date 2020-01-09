@@ -1,4 +1,4 @@
-html, body, section {
+html, body {
     width: 100%;
     height: 100%;
     padding: 0;
@@ -7,12 +7,30 @@ html, body, section {
 }
 
 section {
+    width: 100%;
     display: flexbox;
     padding: 0.5rem;
     
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.hide {
+footer {
+    position: absolute;
+    padding: .5rem;
+    bottom: 0.5rem;
+    text-align: center;
+    font-size: .7em;
+    color: #8e8e8f;
+}
+
+footer a {
+    color: #5e5e5f
+}
+
+.hidden {
     display: none;
     visibility: hidden;
     height: 0;
