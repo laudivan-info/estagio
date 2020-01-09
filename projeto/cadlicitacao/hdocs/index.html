@@ -15,14 +15,14 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/licitacao.css">
+  <link rel="stylesheet" href="./style/licitacao.css">
   <title></title>
 </head>
 
 <body>
   <!-- Tela de login -->
   <section id="loginScreen">
-    <img src="images/logo.pms.svg" class="appLogo">
+    <img src="./images/logo.pms.svg" class="appLogo">
     <div class="content">
       <fieldset id="usuario">
         <div class="form-group">
@@ -36,14 +36,15 @@
           <input type="password" class="form-control" id="senha" placeholder="********">
         </div>
       </fieldset>
-      <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
+      <a href="#" clickToPage="menuScreen" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button"
+        aria-disabled="true">Entrar</a>
     </div>
   </section>
 
 
   <!-- Tela de início da aplicação -->
   <section id="menuScreen">
-    <img src="images/logo.pms.svg" class="appLogo">
+    <img src="./images/logo.pms.svg" class="appLogo">
     <div class="content">
       <a href="#" class="btn btn_menu">Cadastrar editais</a>
       <a href="#" class="btn btn_menu">Listar editais</a>
@@ -65,7 +66,21 @@
   </section>
 
   <section id="aboutScreen">
-
+    <img src="./images/logo.pms.svg" class="appLogo">
+    <div class="content">
+      <h3>Sobre o aplicativo</h3>
+      <p></p>
+      <h3>Equipe de desenvolvimento</h3>
+      <p>Este aplicativo foi desenvolvido pelo programador estatutário da prefeitura
+        em conjunto com os estágiários listados abaixo:</p>
+      <ul>
+        <li>Laudivan Freire de Almeida (programador estatutário)</li>
+        <li>Natália (estagiária/IF Sertão)</li>
+        <!--TODO: completar o nome-->
+        <li>Michel Aprígio (estagiário/CETEP Juazeiro)</li>
+        <!--TODO: completar o nome-->
+      </ul>
+    </div>
   </section>
 
   <div id="confirmRemoveModal" class="modal" tabindex="-1" role="dialog">
@@ -117,7 +132,6 @@
     changePageById('loginScreen')
 
     $(document.querySelectorAll('[clickToPage]')).click(clickToPage)
-
   })
 </script>
 
