@@ -78,7 +78,7 @@ footer a {
 }
 
 .navbar.fixed-top + .content {
-    margin-top: 3.5rem;
+    margin-top: 3.8rem;
 }
 
 .btn_menu {
@@ -104,6 +104,6 @@ footer a {
 
 .btn_menu:hover {
     background: #6c757d;
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
 }
