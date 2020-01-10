@@ -5,13 +5,9 @@
  * @param {EventTarget} event 
  */
 function clickToPage(event) {
-    target = event.target
-
-    toPageId = $(target).attr('clickToPage')
+    toPageId = $(event.target).attr('clickToPage')
 
     if (!toPageId) return
-
-    console.log('Change to ' + toPageId)
 
     changePageById(toPageId)
 }
@@ -35,6 +31,13 @@ function changePageById(toPageId) {
  * 
  * @param {String} idEdital 
  */
-function removeEdital(idEdital) {
+function removeEdital(event) {
+    edital = $(event.target).attr('removeEdital')
+
+    $('#confirmRemoveModal .modal-body span').html(edital)
+
+    $('#confirmRemoveModal').modal('show')
+
+    console.log(edital)
 
 }

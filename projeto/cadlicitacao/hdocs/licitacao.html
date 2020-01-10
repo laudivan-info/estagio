@@ -75,9 +75,37 @@
       <span class="navbar-text">Listar editais</span>
     </nav>
     <div class="content">
-      <select class="form-control form-control-lg">
-        <option>Concorrência</option>
-      </select>
+      <div class="form-group">
+        <label for="tipoLicitacao">Modalidade</label>
+        <select id="tipoLicitacao" class="form-control form-control-lg">
+          <option>Concorrência</option>
+          <option>Tomada de preço</option>
+          <option>Concurso</option>
+        </select>
+      </div>
+
+      <ul id="lstEditais" class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          001/2019
+          <span class="badge">
+            <img removeEdital="001/2019" src="./images/btn_excluir.svg">
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          002/2019
+          <span class="badge">
+            <img removeEdital="002/2019" src="./images/btn_excluir.svg">
+          </span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          003/2019
+          <span class="badge">
+            <img removeEdital="003/2019" src="./images/btn_excluir.svg">
+          </span>
+        </li>
+      </ul>
+
+
     </div>
   </section>
 
@@ -87,6 +115,16 @@
       <span class="navbar-text">Listar empresas</span>
     </nav>
     <div class="content">
+      <div class="form-group">
+        <label for="licitacao">Licitação</label>
+        <select id="licitacao" class="form-control form-control-lg">
+          <option>001/2019</option>
+          <option>002/2019</option>
+          <option>003/2019</option>
+          <option>004/2019</option>
+        </select>
+      </div>
+
 
     </div>
   </section>
@@ -110,7 +148,7 @@
   </section>
 
   <div id="confirmRemoveModal" class="modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Remoção de edital</h5>
@@ -156,6 +194,8 @@
     changePageById('loginScreen')
 
     $(document.querySelectorAll('[clickToPage]')).click(clickToPage)
+
+    $(document.querySelectorAll('[removeEdital]')).click(removeEdital)
   })
 </script>
 
