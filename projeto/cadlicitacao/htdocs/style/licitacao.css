@@ -64,7 +64,8 @@ footer a {
 /* overwritting bootstrap */
 #loginScreen .content, #menuScreen .content,
 #cadScreen .content, #downloadScreen .content,
-#editalLstScreen .content, #empLstScreen .content
+#editalLstScreen .content, #empLstScreen .content,
+#cadEditalScreen .content
 {
     max-width: 15rem; 
     margin-top: 4.5rem;
