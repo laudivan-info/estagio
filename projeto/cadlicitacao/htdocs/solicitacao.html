@@ -30,8 +30,41 @@
     <section id="cadScreen">
         <img src="./images/logo.pms.svg" class="appLogo">
         <div class="content">
-
+            <label for="tipoLicitacao">Tipo de edital</label>
+            <select id="tipoLicitacao" class="form-control form-control-lg">
+              <option>Concorrência</option>
+              <option>Tomada de preço</option>
+              <option>Concurso</option>
+            </select>
+            <div class="content">
+                <fieldset id="cadScreen">
+                  <div class="form-group">
+                    <label for="DcadScream">Número do edital/objeto</label>
+                    <input type="text" class="form-control" id="cadScreen" aria-describedby="DcadlHelp"
+                      placeholder="001/2020">
+                    <small id="DcadHelp" class="form-text text-muted"> </small>
+                  </div>
+                  </fieldset>
+                  <div class="form-group">
+                    <label for="cadScream">CPF/CPNJ</label>
+                    <input type="text" class="form-control" id="descrição" placeholder="00.000.000/0001-00">
+                  </div>
+                  <div class="form-group">
+                    <label for="cadScream">Empresa</label>
+                    <input type="text" class="form-control" id="cadScream" placeholder="Nome da empresa">
+                  </div>
+                  <div class="form-group">
+                    <label for="cadScream">Telefone</label>
+                    <input type="number" class="form-control" id="cadScream" placeholder="(00) 00000-0000">
+                  </div>
+                  <div class="form-group">
+                    <label for="cadScream">Email</label>
+                    <input type="email" class="form-control" id="cadScream" placeholder="Email@empresa.com">
+                  </div>
+                  </div>
         </div>
+        <a href="#" clickToPage="cadEditalScreen" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+        aria-disabled="true">Solicitar</a>
     </section>
 
     <!-- Tela de início da aplicação -->
@@ -70,7 +103,7 @@
     <footer>
         &copy;<a target="_blank" href="http://www.sobradinho.ba.gov.br">
             Prefeitura Municipal de Sobradinho, Bahia (2020)
-        </a>
+         </a>
     </footer>
 
 </body>
@@ -93,7 +126,7 @@
 <script src="./javascript/function.js"></script>
 <script>
     $(function () {
-        changePageById('downloadScreen')
+        changePageById('cadScreen')
 
         $(document.querySelectorAll('[clickToPage]')).click(clickToPage)
     })

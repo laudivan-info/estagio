@@ -65,8 +65,31 @@
       <span class="navbar-text">Cadastrar edital</span>
     </nav>
     <div class="content">
-
+      <div class="form-group">
+        <label for="tipoLicitacao">Tipo de edital</label>
+        <select id="tipoLicitacao" class="form-control form-control-lg">
+          <option>Concorrência</option>
+          <option>Tomada de preço</option>
+          <option>Concurso</option>
+        </select>
+        <div class="content">
+          <fieldset id="cadEditalScreen">
+            <div class="form-group">
+              <label for="DcadEdital">Número do edital/objeto</label>
+              <input type="text" class="form-control" id="cadEditalScreen" aria-describedby="DcadEditallHelp"
+                placeholder="001/2020">
+              <small id="DcadEditalHelp" class="form-text text-muted"> </small>
+            </div>
+            </fieldset>
+            <div class="form-group">
+              <label for="descrição">Descrição</label>
+              <input type="text" class="form-control" id="descrição">
+            </div>
+            </div>
+      </div>
     </div>
+    <a href="#" clickToPage="cadEditalScreen" class="btn btn-secondary btn-lg" tabindex="-1" role="button"
+        aria-disabled="true">Cadastrar</a>
   </section>
 
   <section id="editalLstScreen">
@@ -86,19 +109,19 @@
 
       <ul id="lstEditais" class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          001/2019
+          001/2020
           <span class="badge">
             <img removeEdital="001/2019" src="./images/btn_excluir.svg">
           </span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          002/2019
+          002/2020
           <span class="badge">
             <img removeEdital="002/2019" src="./images/btn_excluir.svg">
           </span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
-          003/2019
+          003/2020
           <span class="badge">
             <img removeEdital="003/2019" src="./images/btn_excluir.svg">
           </span>
@@ -118,10 +141,10 @@
       <div class="form-group">
         <label for="licitacao">Licitação</label>
         <select id="licitacao" class="form-control form-control-lg">
-          <option>001/2019</option>
-          <option>002/2019</option>
-          <option>003/2019</option>
-          <option>004/2019</option>
+          <option>001/2020</option>
+          <option>002/2020</option>
+          <option>003/2020</option>
+          <option>004/2020</option>
         </select>
       </div>
 
